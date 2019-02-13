@@ -1,0 +1,279 @@
+body { 
+    background-color: #fff;
+}
+.wrapper-info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 330px;
+    padding: 0;
+    margin: 0;
+    width: 900px;
+    height: 600px;
+    background-color: #fff;
+}
+
+/* FORM */
+#my-name, #name-log, #birthday, #phone, #email {
+    margin: 10px 80px 20px 260px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 4px;
+    width: 414px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+}
+    #my-name {
+        margin: 60px 80px 20px 260px;
+    }
+    
+/* TUY CHINH O INPUT */
+.wrapper-info form input {
+    width: 380px;
+    height: 35px;
+    margin: 5px 5px 0 15px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: #fff;
+}
+
+/* FORM dac biet*/
+    #birthday {
+        width: 200px;
+    }
+    #phone {
+        position: absolute;
+        top: 257px;
+        width: 200px;
+        height: 61px;
+        left: 214px;
+    }
+
+/* TUY CHINH INPUT */
+.wrapper-info form #birth, .wrapper-info form #ph {
+    width: 180px;
+    height: 30px;
+}
+
+/* TUY CHINH LABEL */
+label {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #414141;
+    margin: 10px 0 0 15px;
+}
+
+/* TUY CHINH MUC 'LUU THAY DOI' va 'NUT QUAY LAI'  */
+#save-info {
+    position: absolute;
+    top: 460px;
+    left: 394px;
+    margin: 20px;
+    color: dodgerblue;
+    background: #fff;
+    border: 1px solid dodgerblue;
+    padding: 8px 12px;
+    border-radius: 4px; 
+}
+        #save-info:hover {
+            background: dodgerblue;
+            color: #fff;
+        }
+#back {
+    position: absolute;
+    left: 260px;
+    top: 28px;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+/*<------- RESPONSIVE WEB ------->*/
+
+@media (max-width: 1920px) {
+    .wrapper-info {
+        background: rgb(255, 255, 255);
+        width: 1200px;
+        left: 610px;
+    }
+    #my-name, #name-log, #birthday, #phone, #email {
+        width: 614px;
+    }
+    #my-name {
+        margin: 150px 80px 20px 260px;
+    }
+
+    #birthday, #phone{
+        width: 300px;
+    }
+    #phone {
+        left: 314px;
+        top: 347px;
+    }
+    #save-info {
+        left: 494px;
+        top: 550px;
+    }
+}   
+
+/* 8:5 19" */
+@media (max-width: 1440px) { 
+    .wrapper-info {
+        background: rgb(255, 255, 255);
+        width: 1000px;
+        left: 410px;
+    }
+    #my-name, #name-log, #birthday, #phone, #email {
+        width: 514px;
+    }
+    #birthday, #phone{
+        width: 250px;
+    }
+    #phone {
+        left: 264px;
+    }
+    #save-info {
+        left: 440px;
+    }
+}   
+
+@media (max-width: 1366px) { 
+    .wrapper-info {
+        width: 920px;
+    }
+    #my-name, #name-log, #birthday, #phone, #email {
+        width: 494px;
+    }
+    #birthday, #phone{
+        width: 240px;
+    }
+    #phone {
+        left: 254px;
+    }
+}
+
+
+/* 8:5 Laptop 14" */
+@media (max-width: 1280px) { 
+    .wrapper-info {
+        width: 820px;
+    }
+    #my-name, #name-log, #birthday, #phone, #email {
+        margin: 10px 80px 20px 200px;
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 4px;
+        width: 424px;
+        padding: 1px;
+    }
+        #my-name {
+            margin: 60px 80px 20px 200px;
+        }
+    /* FORM dac biet*/
+    #birthday {
+        width: 200px;
+    }
+    #phone {
+        position: absolute;
+        top: 257px;
+        width: 210px;
+        height: 61px;
+        left: 214px;
+    }
+    #save-info {
+        top: 460px;
+        left: 330px;
+    }    
+}
+
+/*-------------------------- iPad  -------------------------- */
+@media (max-width: 768px) { 
+    .wrapper-info {
+        top: 100px;
+        left: 200px;
+        width: 365px;  
+        height: 700px;
+    }
+
+    #my-name, #name-log, #birthday, #phone, #email {
+        margin: 5px 0px 10px 0px;
+        width: 340px;
+    }
+        #my-name {
+            margin: 50px 0px 10px 0px;
+        }
+
+    .wrapper-info form input {
+        width: 280px;
+    }
+
+    #phone, #birthday{
+        left: 0;
+        top: 0;
+        position: relative;
+    }
+    /* nut quay lai */
+    /* nut save */
+    #back, #save-info {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+/* iPhone 6*/
+@media (max-width: 375px) { 
+    .wrapper-info {
+        top: 0;
+        left: 0;
+        width: 365px;  
+        height: 700px;
+    }
+
+    #my-name, #name-log, #birthday, #phone, #email {
+        margin: 5px 0px 10px 0px;
+        width: 340px;
+    }
+        #my-name {
+            margin: 50px 0px 10px 0px;
+        }
+
+    .wrapper-info form input {
+        width: 280px;
+    }
+
+    #phone, #birthday{
+        left: 0;
+        top: 0;
+        position: relative;
+    }
+
+    #back, #save-info {
+        left: 0;
+        opacity: 1;
+    }
+}
+@media (max-width: 320px) {
+    .wrapper-info {
+        width: 320px;  
+    }
+    #my-name, #name-log, #birthday, #phone, #email {
+        margin: 5px 0px 10px 0px;
+        width: 300px;
+    }
+        #my-name {
+            margin: 50px 0px 10px 0px;
+        }
+}
+
+
+
+
+
+
+
+
+

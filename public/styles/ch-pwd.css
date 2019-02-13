@@ -1,0 +1,303 @@
+body { 
+    background-color: #fff;
+}
+.wrapper-changepwd {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 330px;
+    padding: 0;
+    margin: 0;
+    width: 900px;
+    height: 700px;
+    background: #ffffff;
+    
+}
+
+/* FORM */
+#name-log1, #pwd-new, #pwd-again {
+    margin: 10px 80px 20px 260px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 4px;
+    width: 400px;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+}
+    #name-log1{
+        margin: 60px 80px 20px 260px;
+    }
+    
+/* TUY CHINH O INPUT */
+.wrapper-changepwd form input {
+    width: 340px;
+    height: 35px;
+    margin: 5px 5px 0 15px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: #fff;
+}
+
+/* TUY CHINH LABEL */
+label {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #414141;
+    margin: 10px 0 0 15px;
+}
+
+/* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
+#save, #cancer {
+    position: absolute;
+    top: 460px;
+    left: 337px;
+    margin: 20px;
+    color: dodgerblue;
+    background: #fff;
+    border: 1px solid dodgerblue;
+    padding: 8px 12px;
+    border-radius: 4px; 
+}
+        #save:hover {
+            background: dodgerblue;
+            color: #fff;
+        }
+
+#cancer {
+    left: 455px;
+    color: tomato;
+    background: #fff;
+    border: 1px solid tomato;
+}    
+        #cancer:hover {
+            background: tomato;
+            color: #fff;
+        }    
+
+#eye, #eyeTwo {
+    position: absolute;
+    top: 286px;
+    left: 839px;
+    color: #666;
+    cursor: pointer;
+    opacity: 0.6;
+}
+#eye:hover, #eyeTwo:hover {
+    opacity: 1;
+    color: #555;
+}
+#eye:active, #eyeTwo:active {
+    transform: scale(0.9);
+    color: #444;
+}
+#eyeTwo { top: 399px; }
+
+
+
+
+/*<------- RESPONSIVE WEB ------->*/
+
+@media (max-width: 1920px) {
+    .wrapper-changepwd {
+        width: 1200px;
+        left: 520px;
+        height: 700px;
+    }
+    /* FORM */
+    #name-log1, #pwd-new, #pwd-again {
+        width: 464px;
+    }
+        #name-log1{
+            margin: 130px 80px 20px 260px;
+        }
+    /* TUY CHINH O INPUT */
+    .wrapper-changepwd form input {
+        width: 400px;
+        height: 40px;
+    }  
+          
+    #save {
+        left: 368px;
+    }
+    #cancer {
+        left: 492px;
+    }
+    #eye, #eyeTwo {
+        left: 690px;
+        top: 285px;
+    }
+    #eyeTwo { top: 395px;}
+}   
+
+
+@media (max-width: 1440px) { 
+    .wrapper-changepwd {
+        width: 950px;
+        height: 680px;
+        left: 410px;
+    }
+    /* FORM */
+    #name-log1, #pwd-new, #pwd-again {
+        width: 364px;
+        margin: 30px 80px 5px 190px;
+    }
+        #name-log1{
+            margin: 120px 80px 5px 190px;
+        }
+    /* TUY CHINH O INPUT */
+    .wrapper-changepwd form input {
+        width: 300px;
+    }        
+    #save {
+        left: 240px;
+    }
+    #cancer {
+        left: 360px;
+    }
+    #eyeTwo, #eye {
+        left: 520px;
+    }
+}
+
+
+@media (max-width: 1366px) { 
+    .wrapper-changepwd {
+        width: 850px;
+        left: 430px;
+    }
+    /* FORM */
+    #name-log1, #pwd-new, #pwd-again {
+        margin: 40px 80px 5px 160px;
+    }
+        #name-log1{
+            margin: 110px 80px 5px 160px;
+        }
+    #save {
+        left: 220px;
+    }
+    #cancer {
+        left: 340px;
+    }
+    #eyeTwo, #eye {
+        left: 490px;
+    }
+    #eyeTwo { top: 408px; }
+}
+
+
+/* 8:5 19" */
+@media (max-width: 1280px) { 
+    .wrapper-changepwd {
+        width: 800px;
+        height: 660px;
+        left: 400px;
+    }
+} 
+
+
+/* -----------------iPad */
+@media (max-width: 768px) { 
+    .wrapper-changepwd {
+        top: 100px;
+        left: 200px;
+        width: 365px;  
+        height: 700px;
+    }
+
+    .wrapper-changepwd form input {
+        width: 250px;
+    }
+    #name-log1, #pwd-new, #pwd-again {
+        margin: 10px 80px 20px 0;
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 4px;
+        width: 340px;
+    }
+        #name-log1{
+            margin: 60px 80px 20px 0;
+        }
+    /* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
+    #save, #cancer {
+        position: absolute;
+        top: 350px;
+        left: 27px; 
+    }
+            #save:hover {
+                background: dodgerblue;
+                color: #fff;
+            }
+
+    #cancer {
+        left: 145px;
+    }
+    #back {
+        left: 0;
+        opacity: 1;
+    }
+    #eye {
+        left: 314px;
+        top: 215px;
+    }
+    #eyeTwo { left: 314px; top: 323px;}  
+}  
+
+
+/* iPhone 6 */
+@media (max-width: 375px) { 
+    .wrapper-changepwd {
+        top: 0;
+        left: 0;
+        width: 365px;  
+        height: 700px;
+    }
+
+    .wrapper-changepwd form input {
+        width: 250px;
+    }
+    #name-log1, #pwd-new, #pwd-again {
+        margin: 10px 80px 20px 0;
+        border: 1px solid rgb(197, 197, 197);
+        border-radius: 4px;
+        width: 340px;
+    }
+        #name-log1{
+            margin: 60px 80px 20px 0;
+        }
+    /* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
+    #save, #cancer {
+        position: absolute;
+        top: 350px;
+        left: 27px; 
+    }
+            #save:hover {
+                background: dodgerblue;
+                color: #fff;
+            }
+
+    #cancer {
+        left: 145px;
+    }
+    #eye {
+        left: 314px;
+        top: 215px;
+    }
+    #eyeTwo { left: 314px; top: 323px;}
+    
+}     
+
+/* iPhone 5 */
+@media (max-width: 320px) {
+    .wrapper-changepwd {
+        width: 310px;  
+    }
+    #name-log1, #pwd-new, #pwd-again {
+        width: 300px;
+    }
+
+    #eye {
+        left: 272px;
+        top: 215px;
+    }
+    #eyeTwo { left: 272px; top: 323px;}
+}

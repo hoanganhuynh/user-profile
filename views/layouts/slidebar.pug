@@ -1,0 +1,36 @@
+doctype html
+
+mixin span(score)
+    span#point
+        span= score.span
+
+head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href="/styles/custom.css")
+    link(rel='stylesheet', href="/styles/info.css")
+    link(rel='stylesheet', href="/styles/ch-pwd.css")
+    link(rel='stylesheet', href="/styles/exercise.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Helvetica")
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.1/css/all.css', integrity='sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr', crossorigin='anonymous')
+body
+    .slidebar-left
+        .my-avatar
+            i.fas.fa-edit
+            img.avatar(src='/image/avatar.png', alt='Avatar')            
+        .my-info
+            i.fas.fa-info-circle
+            a(href='/about/my-info')  Thông tin cá nhân
+        .change-password
+            i.fas.fa-key
+            a(href='/about/change-pass')  Đổi mật khẩu
+        .exercise-done
+            i.fas.fa-clipboard-list
+            a(href='/about/exe-done')  Bài tập đã làm
+        .my-point
+            span#my-score Score
+            - const p = { span: '100'}
+            +span(p)
+        
+    block content
