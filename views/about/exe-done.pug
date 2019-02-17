@@ -2,13 +2,11 @@ extends ../layouts/slidebar
 
 mixin topic(topicData)
     .topic= topicData.topic
-
-mixin row(rowData)
-    tr
-        td= rowData.td
-        td= rowData.td
-        td= rowData.td
-        td= rowData.td
+mixin link(link)
+    td= link.td
+mixin status(stt)
+    td= stt.td
+                  
 //- head
 //-     script(src="/javascript/show-exe-of-topic.js")
 //- body
@@ -16,54 +14,122 @@ block content
     .container     
         .wrapper-exe
             a#back(href='/about') Quay lai
-            - const t = { topic: 'Chu de 1'}
-            +topic(t)
-            - const t2 = { topic: 'Chu de 1'}
-            +topic(t2)
-            - const t3 = { topic: 'Chu de 1'}
-            +topic(t3)
-            - const t4 = { topic: 'Chu de 1'}
-            +topic(t4)
-            - const t5 = { topic: 'Chu de 1'}
-            +topic(t5)
-            //- - const t6 = { topic: 'Chu de 1'}
-            //- +topic(t6)
-            //- - const t7 = { topic: 'Chu de 1'}
-            //- +topic(t7)
-            //- - const t8 = { topic: 'Chu de 1'}
-            //- +topic(t8)
-            //- - const t9 = { topic: 'Chu de 1'}
-            //- +topic(t9)
-            //- - const t10 = { topic: 'Chu de 1'}
-            //- +topic(t10)
-            table.showOneTopic
-                tr.spaceUnder
-                    th STT
-                    th Chu de
-                    th Link
-                    th Trang thai
-    
-                - const r1 = {td: '1'}
-                +row(r1)
-                tr.spaceUnder
-                    td 2
-                    td Chu de 1
-                    td https://thisislink.example.xyz
-                    td Chua cham    
-                tr.spaceUnder
-                    td 3
-                    td Chu de 1
-                    td https://thisislink.example.xyz
-                    td Chua cham 
-                tr.spaceUnder
-                    td 4
-                    td Chu de 1
-                    td https://thisislink.example.xyz
-                    td Chua cham
-                tr.spaceUnder
-                    td 5
-                    td Chu de 1
-                    td https://thisislink.example.xyz
-                    td Chua cham               
+            .all-topic
+                button.tablinks.active(onclick="openTopic(event, 'HTML')") HTML
+                button.tablinks(onclick="openTopic(event, 'CSS')") CSS
+                button.tablinks(onclick="openTopic(event, 'JavaScript')") JavaScript
+
+            #HTML.tabcontent(style='display:block')
+                table.showOneTopic
+                    tr.spaceUnder
+                        th STT
+                        th Chu de
+                        th Link
+                        th Trang thai
+                    tr.spaceUnder
+                        td 1
+                        td HTML
+                        - const l = { td: 'https://thisislink.example.xyz'}
+                        +link(l)
+                        - const s = { td: 'Chua cham'}
+                        +status(s)
+                    tr.spaceUnder
+                        td 2
+                        td HTML
+                        - const l1 = { td: 'https://thisislink.example.xyz'}
+                        +link(l1)
+                        - const s1 = { td: 'Chua cham'}
+                        +status(s1)
+                    tr.spaceUnder
+                        td 3
+                        td HTML
+                        - const l2 = { td: 'https://thisislink.example.xyz'}
+                        +link(l2)
+                        - const s2 = { td: '10'}
+                        +status(s2)
+                    tr.spaceUnder
+                        td 4
+                        td HTML
+                        - const l3 = { td: 'https://thisislink.example.xyz'}
+                        +link(l3)
+                        - const s3 = { td: 'Chua cham'}
+                        +status(s3)                                                    
+            #CSS.tabcontent
+                table.showOneTopic
+                    tr.spaceUnder
+                        th STT
+                        th Chu de
+                        th Link
+                        th Trang thai
+                    tr.spaceUnder
+                        td 1
+                        td CSS
+                        - const l4 = { td: 'https://thisislink.example.xyz'}
+                        +link(l4)
+                        - const s4 = { td: 'Sai'}
+                        +status(s4)
+                    tr.spaceUnder
+                        td 2
+                        td CSS
+                        - const l5 = { td: 'https://thisislink.example.xyz'}
+                        +link(l5)
+                        - const s5 = { td: 'Sai'}
+                        +status(s5)
+                    tr.spaceUnder
+                        td 3
+                        td CSS
+                        - const l6 = { td: 'https://thisislink.example.xyz'}
+                        +link(l6)
+                        - const s6 = { td: 'Chua cham'}
+                        +status(s6)
+                    tr.spaceUnder
+                        td 4
+                        td CSS
+                        - const l7 = { td: 'https://thisislink.example.xyz'}
+                        +link(l7)
+                        - const s7 = { td: 'Chua cham'}
+                        +status(s7) 
+            #JavaScript.tabcontent
+                table.showOneTopic
+                    tr.spaceUnder
+                        th STT
+                        th Chu de
+                        th Link
+                        th Trang thai
+                    tr.spaceUnder
+                        td 1
+                        td JavaScript
+                        - const l8 = { td: 'https://thisislink.example.xyz'}
+                        +link(l8)
+                        - const s8 = { td: '9'}
+                        +status(s8)
+                    tr.spaceUnder
+                        td 2
+                        td JavaScript
+                        - const l9 = { td: 'https://thisislink.example.xyz'}
+                        +link(l9)
+                        - const s9 = { td: 'Chua cham'}
+                        +status(s9)
+                    tr.spaceUnder
+                        td 3
+                        td JavaScript
+                        - const l10 = { td: 'https://thisislink.example.xyz'}
+                        +link(l10)
+                        - const s10 = { td: 'Sai'}
+                        +status(s10)
+                    tr.spaceUnder
+                        td 4
+                        td JavaScript
+                        - const l11 = { td: 'https://thisislink.example.xyz'}
+                        +link(l11)
+                        - const s11 = { td: '10'}
+                        +status(s11)
+
+
+
+    button#btnOnTop(onclick='topFunction()', title='Go to top')
+        i.fas.fa-chevron-up
+
+   
 
     script(src="/javascript/show-exe-of-topic.js")           
