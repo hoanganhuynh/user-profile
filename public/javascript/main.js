@@ -6,8 +6,6 @@
         var pwd = document.getElementById('pwd');
         var eye = document.getElementById('eye');
 
-        console.log(eye);
-        console.log(pwd);
 
         eye.addEventListener('click', () => {
             eye.classList.toggle('active');
