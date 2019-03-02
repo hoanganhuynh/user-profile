@@ -18,7 +18,8 @@ block content
                 button.tablinks.active(onclick="openTopic(event, 'HTML')") HTML
                 button.tablinks(onclick="openTopic(event, 'CSS')") CSS
                 button.tablinks(onclick="openTopic(event, 'JavaScript')") JavaScript
-
+                button.tablinks(onclick="openTopic(event, 'JavaScript')") Bootstrap
+                button.tablinks(onclick="openTopic(event, 'JavaScript')") ExpressJS
             #HTML.tabcontent(style='display:block')
                 table.showOneTopic
                     tr.spaceUnder
@@ -29,31 +30,18 @@ block content
                     tr.spaceUnder
                         td 1
                         td HTML
-                        - const l = { td: 'https://thisislink.example.xyz'}
-                        +link(l)
-                        - const s = { td: 'Chua cham'}
-                        +status(s)
+                        td https://thisislink.example.xyz
+                        td Chua cham
                     tr.spaceUnder
-                        td 2
+                        td 1
                         td HTML
-                        - const l1 = { td: 'https://thisislink.example.xyz'}
-                        +link(l1)
-                        - const s1 = { td: 'Chua cham'}
-                        +status(s1)
+                        td https://thisislink.example.xyz
+                        td Chua cham
                     tr.spaceUnder
-                        td 3
+                        td 1
                         td HTML
-                        - const l2 = { td: 'https://thisislink.example.xyz'}
-                        +link(l2)
-                        - const s2 = { td: '10'}
-                        +status(s2)
-                    tr.spaceUnder
-                        td 4
-                        td HTML
-                        - const l3 = { td: 'https://thisislink.example.xyz'}
-                        +link(l3)
-                        - const s3 = { td: 'Chua cham'}
-                        +status(s3)                                                    
+                        td https://thisislink.example.xyz
+                        td Chua cham                                                                
             #CSS.tabcontent
                 table.showOneTopic
                     tr.spaceUnder
@@ -64,31 +52,14 @@ block content
                     tr.spaceUnder
                         td 1
                         td CSS
-                        - const l4 = { td: 'https://thisislink.example.xyz'}
-                        +link(l4)
-                        - const s4 = { td: 'Sai'}
-                        +status(s4)
+                        td https://thisislink.example.xyz
+                        td Chua cham
                     tr.spaceUnder
-                        td 2
+                        td 1
                         td CSS
-                        - const l5 = { td: 'https://thisislink.example.xyz'}
-                        +link(l5)
-                        - const s5 = { td: 'Sai'}
-                        +status(s5)
-                    tr.spaceUnder
-                        td 3
-                        td CSS
-                        - const l6 = { td: 'https://thisislink.example.xyz'}
-                        +link(l6)
-                        - const s6 = { td: 'Chua cham'}
-                        +status(s6)
-                    tr.spaceUnder
-                        td 4
-                        td CSS
-                        - const l7 = { td: 'https://thisislink.example.xyz'}
-                        +link(l7)
-                        - const s7 = { td: 'Chua cham'}
-                        +status(s7) 
+                        td https://thisislink.example.xyz
+                        td Chua cham
+                
             #JavaScript.tabcontent
                 table.showOneTopic
                     tr.spaceUnder
@@ -99,31 +70,19 @@ block content
                     tr.spaceUnder
                         td 1
                         td JavaScript
-                        - const l8 = { td: 'https://thisislink.example.xyz'}
-                        +link(l8)
-                        - const s8 = { td: '9'}
-                        +status(s8)
+                        td https://thisislink.example.xyz
+                        td Chua cham
                     tr.spaceUnder
-                        td 2
+                        td 1
                         td JavaScript
-                        - const l9 = { td: 'https://thisislink.example.xyz'}
-                        +link(l9)
-                        - const s9 = { td: 'Chua cham'}
-                        +status(s9)
+                        td https://thisislink.example.xyz
+                        td Chua cham
                     tr.spaceUnder
-                        td 3
+                        td 1
                         td JavaScript
-                        - const l10 = { td: 'https://thisislink.example.xyz'}
-                        +link(l10)
-                        - const s10 = { td: 'Sai'}
-                        +status(s10)
-                    tr.spaceUnder
-                        td 4
-                        td JavaScript
-                        - const l11 = { td: 'https://thisislink.example.xyz'}
-                        +link(l11)
-                        - const s11 = { td: '10'}
-                        +status(s11)
+                        td https://thisislink.example.xyz
+                        td Chua cham
+                
 
 
 
@@ -132,4 +91,5 @@ block content
 
    
 
-    script(src="/javascript/show-exe-of-topic.js")           
+    script(src="/javascript/show-exe-of-topic.js")   
+    script(src="/javascript/uploadAvt.js")          

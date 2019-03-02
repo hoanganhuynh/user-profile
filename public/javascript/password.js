@@ -16,7 +16,7 @@ if (eye) {
 
 /*
 |==================================================================================|
-|    Re-enter the new password in the box. Js code for hiding/showing passwords    |
+|             Confirm-password in the box. Js code for hiding/showing passwords    |
 |==================================================================================|
 */
 var pwdTwo = document.getElementById('pwdTwo');
@@ -28,5 +28,45 @@ if(eyeTwo) {
         (pwdTwo.type == 'password') ? pwdTwo.type = 'text': pwdTwo.type = 'password';
     });
 }
+/*
+|==================================================================================|
+|                          CHECKING CONFIRM-PASSWORD                               |
+|==================================================================================|
+*/
+
+
+var check = function() {
+    if (document.getElementById('pwd').value == document.getElementById('pwdTwo').value) {
+        document.getElementById('message').style.color = 'green';
+        document.getElementById('message').innerHTML = 'Mật khẩu khớp';
+    } else {
+            document.getElementById('message').style.color = 'red';
+        document.getElementById('message').innerHTML = 'Mật khẩu chưa trùng khớp!';
+    }
+}
+
+
+function validateForm()
+{
+    
+    var newPwd = document.getElementById('pwd').value;
+    var againPwd = document.getElementById('pwdTwo').value;
+ 
+    // Kiểm tra dữ liệu hợp lệ hay không
+    if (newPwd == ''){
+        alert('Bạn chưa điền mật khẩu');
+    }
+    else if (againPwd == '')
+    {
+        alert('Nhập lại mật khẩu mới');
+    }
+    else{
+        alert('Dữ liệu hợp lệ, ta có thể chấp nhận submit form');
+        return true;
+    }
+ 
+    return false;
+}
+
 
 

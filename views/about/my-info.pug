@@ -5,9 +5,10 @@ block content
     .container     
         .wrapper-info
             a#back(href='/about') Quay lai
-            form#my-name
+
+            form#my-name(method='post', action='', onsubmit='return validateName()')
                 label(for='name') họ và tên
-                input#name(type='text',placeholder="Nhập họ tên bạn...")
+                input#name(type='text', value="Huỳnh Hoàng Ẩn")
             form#name-log
                 label(for='') tên đăng nhập
                 input(type='text', disabled="disabled", value="hoangan123")
@@ -16,11 +17,17 @@ block content
                 input#birth(type='date')
             form#phone
                 label(for='ph') số điện thoại
-                input#ph(type='number',placeholder="Nhập số điện thoại...")
+                input#ph(type='number', value="0327846162")
             form#email
                 label email
                 input(type='text',disabled="disabled", value="hoangan@coder.com")
-            a#save-info(href='#') Lưu thay đổi
+
+
+                input#save-info(type='submit', name='save', value='Lưu thay đổi')
+        
+
+    script(src="/javascript/doiten.js")  
+    script(src="/javascript/uploadAvt.js")      
 
 
 

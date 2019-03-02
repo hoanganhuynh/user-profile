@@ -50,14 +50,19 @@ label {
 /* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
 #save, #cancer {
     position: absolute;
-    top: 460px;
+    width: 150px;
+    top: 430px;
     left: 337px;
     margin: 20px;
+    text-align: center;
     color: dodgerblue;
     background: #fff;
     border: 1px solid dodgerblue;
     padding: 8px 12px;
     border-radius: 4px; 
+}
+#save {
+    border-radius: 999px;
 }
         #save:hover {
             background: dodgerblue;
@@ -93,15 +98,20 @@ label {
 }
 #eyeTwo { top: 399px; }
 
+#message {
+    position: absolute;
+    top: 408px;
+    left: 536px;
+}
+
 
 
 
 /*<------- RESPONSIVE WEB ------->*/
-
-@media (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     .wrapper-changepwd {
         width: 1200px;
-        left: 520px;
+        left: 33%;
         height: 700px;
     }
     /* FORM */
@@ -118,24 +128,72 @@ label {
     }  
           
     #save {
-        left: 368px;
+        left: 400px;
     }
     #cancer {
-        left: 492px;
+        left: 400px;
+        top: 479px;
     }
     #eye, #eyeTwo {
         left: 690px;
         top: 285px;
     }
     #eyeTwo { top: 395px;}
+
+
+    #message {
+        position: absolute;
+        top: 396px;
+        left: 747px;
+    }
+}  
+
+@media screen and (max-width: 1920px) {
+    .wrapper-changepwd {
+        width: 1200px;
+        left: 33%;
+        height: 700px;
+    }
+    /* FORM */
+    #name-log1, #pwd-new, #pwd-again {
+        width: 464px;
+    }
+        #name-log1{
+            margin: 130px 80px 20px 260px;
+        }
+    /* TUY CHINH O INPUT */
+    .wrapper-changepwd form input {
+        width: 400px;
+        height: 40px;
+    }  
+          
+    #save {
+        left: 400px;
+    }
+    #cancer {
+        left: 400px;
+        top: 479px;
+    }
+    #eye, #eyeTwo {
+        left: 690px;
+        top: 285px;
+    }
+    #eyeTwo { top: 395px;}
+
+
+    #message {
+        position: absolute;
+        top: 396px;
+        left: 747px;
+    }
 }   
 
 
-@media (max-width: 1440px) { 
+@media screen and (max-width: 1440px) { 
     .wrapper-changepwd {
         width: 950px;
         height: 680px;
-        left: 410px;
+        left: 37%;
     }
     /* FORM */
     #name-log1, #pwd-new, #pwd-again {
@@ -150,96 +208,94 @@ label {
         width: 300px;
     }        
     #save {
-        left: 240px;
+        left: 279px;
     }
     #cancer {
-        left: 360px;
+        left: 279px;
     }
     #eyeTwo, #eye {
         left: 520px;
     }
+    #message {
+        position: absolute;
+        top: 395px;
+        left: 571px;
+    }
 }
 
 
-@media (max-width: 1366px) { 
+@media screen and (max-width: 1366px) { 
     .wrapper-changepwd {
         width: 850px;
-        left: 430px;
     }
     /* FORM */
-    #name-log1, #pwd-new, #pwd-again {
-        margin: 40px 80px 5px 160px;
+    #name-log1, #pwd-new, #pwd-again { margin: 30px 80px 5px 160px; }
+    #name-log1 { margin: 110px 80px 5px 160px;}
+    #save { left: 245px;}
+    #cancer { left: 245px;}
+    #eyeTwo, #eye { left: 490px;}
+    #eye { top: 270px;}
+    #eyeTwo { top: 385px; }
+    #message {
+        position: absolute;
+        top: 62%;
+        left: 21%;
     }
-        #name-log1{
-            margin: 110px 80px 5px 160px;
-        }
-    #save {
-        left: 220px;
-    }
-    #cancer {
-        left: 340px;
-    }
-    #eyeTwo, #eye {
-        left: 490px;
-    }
-    #eyeTwo { top: 408px; }
 }
 
 
 /* 8:5 19" */
-@media (max-width: 1280px) { 
+@media screen and (max-width: 1280px) { 
     .wrapper-changepwd {
         width: 800px;
         height: 660px;
-        left: 400px;
+    }
+    #message {
+        position: absolute;
+        top: 64%;
     }
 } 
 
 
 /* -----------------iPad */
-@media (max-width: 768px) { 
+@media screen and (max-width: 768px) { 
     .wrapper-changepwd {
-        top: 100px;
-        left: 198px;
-        width: 365px;  
-        height: 700px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        z-index: 99;
     }
 
     .wrapper-changepwd form input {
         width: 250px;
     }
     #name-log1, #pwd-new, #pwd-again {
-        margin: 10px 80px 20px 0;
+        margin: 10px 80px 10px 0;
         border: 1px solid rgb(197, 197, 197);
         border-radius: 4px;
-        width: 340px;
+        width: 98%;
     }
         #name-log1{
-            margin: 60px 80px 20px 0;
+            margin: 60px 80px 10px 0;
         }
     /* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
-    #save, #cancer {
-        position: absolute;
-        top: 350px;
-        left: 27px; 
-    }
-            #save:hover {
-                background: dodgerblue;
-                color: #fff;
-            }
-
-    #cancer {
-        left: 145px;
-    }
+    #save { left: 35%; top: 40%; }
     #back {
         left: 0;
         opacity: 1;
     }
-    #eye {
-        left: 314px;
-        top: 215px;
+    #eye, #eyeTwo {
+        left: 94%;
+        top: 21%;
     }
-    #eyeTwo { left: 314px; top: 323px;}  
+    #eyeTwo {
+        top: 30.8%;
+    }
+    #message {
+        top: 359px;
+        left: 12px;
+    }        
 }  
 
 
@@ -256,33 +312,31 @@ label {
         width: 250px;
     }
     #name-log1, #pwd-new, #pwd-again {
-        margin: 10px 80px 20px 0;
+        margin: 10px 80px 10px 0;
         border: 1px solid rgb(197, 197, 197);
         border-radius: 4px;
         width: 340px;
     }
         #name-log1{
-            margin: 60px 80px 20px 0;
+            margin: 60px 80px 10px 0;
         }
     /* TUY CHINH MUC 'LUU THAY DOI' va 'HUY BO' */
-    #save, #cancer {
+    #save {
         position: absolute;
-        top: 350px;
-        left: 27px; 
+        left: 23%;
+        top: 54%;
     }
             #save:hover {
                 background: dodgerblue;
                 color: #fff;
             }
-
-    #cancer {
-        left: 145px;
+    #eye, #eyeTwo {
+        left: 86%;
+        top: 29.5%;
     }
-    #eye {
-        left: 314px;
-        top: 215px;
+    #eyeTwo {
+        top: 43.5%;
     }
-    #eyeTwo { left: 314px; top: 323px;}
     
 }     
 
@@ -296,8 +350,12 @@ label {
     }
 
     #eye {
-        left: 272px;
-        top: 215px;
+        top: 29.5%;
     }
-    #eyeTwo { left: 272px; top: 323px;}
+    #eyeTwo {
+        top: 43.5%;
+    }
+    #save {
+        left: 18%;
+    }
 }

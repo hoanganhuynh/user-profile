@@ -1,0 +1,169 @@
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: 200ms;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    margin-bottom: 20px;
+    box-shadow: 0 0 0 6px #ececec;
+}
+.avatar:hover img {
+    opacity: .6;
+  }
+.avatar:hover .upload {
+    opacity: 1;
+    transform: scale(1);
+  }
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+#to-hide {
+    visibility: hidden;
+  }
+.upload {
+    width: 40px;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    box-shadow: 0 0 0 6px #ececec;
+    border-radius: 50%;
+    outline: none;
+    color: #000;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    opacity: 0;
+    transform: scale(0);
+    transition: 200ms;
+}
+.upload:hover {
+    background: #555;
+    color: #fff;
+}
+  
+
+
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 1px 0px 24px -6px #b5b5b5b0
+  }
+
+.sidenav a, .my-name, .user-name {
+    padding: 21px 8px 20px 70px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    display: block;
+    border: 1px solid rgb(219, 219, 219);
+    text-transform: uppercase;
+    font-family: "Open Sans", Roboto, Helvetica, sans-serif;
+    margin: 10px 0;
+    border-radius: 999px;
+    outline: none;
+}
+
+.my-name, .user-name {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 5px 0;
+    color: dodgerblue;
+    cursor: pointer;
+    border: none;
+}
+.user-name {
+    padding: 0;
+    color: rgb(192, 192, 192);
+    font: 12px;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+    /* border-bottom: 1px solid rgb(219, 219, 219); */
+    padding: 0 0 10px 0;
+}
+
+.sidenav a .far {
+    position: absolute;
+    left: 40px;
+    color: #575757;
+    font-size: 1.3rem;
+}
+.score {
+    position: absolute;
+    right: 8%;
+    color: rgb(255, 255, 255);
+    background: red;
+    padding: 2px 10px;
+    border-radius: 999px;
+}
+  
+.sidenav a:hover {
+    color:  #2e2e2e;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 3px 27px -12px #333;
+}
+.sidenav a:hover  .far {
+    color: #111;
+    font-weight: bold;
+}
+
+a.my-label {
+    margin: 0 0 50px 0;
+}
+
+/* --------------------------------------------------------------- */
+
+@media screen and (max-width: 1280px) {
+    .sidenav {
+        width: 35%;
+    }
+    .sidenav .my-lable {
+        margin-bottom: 50px; 
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 99%;
+    }
+    .sidenav a, .my-name, .score-label, .user-name {
+        margin-right: 20px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .sidenav {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+    .sidenav a, .my-name, .score-label, .user-name {
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+}

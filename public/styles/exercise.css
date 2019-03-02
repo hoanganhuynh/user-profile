@@ -2,23 +2,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: relative;
-    left: 430px;
-    width: 960px;
+    width: 100%;
+    left: 0;
     height: auto;
     background: #fff;
-    margin: 0;
-    padding-top: 50px;
+    margin: 0 !important;
+    /* padding-top: 50px; */
 }
 .all-topic {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    height: 260px;
+    /* height: 260px; */
 }
 /* Button/Name Topic */
 .tablinks {
+    width: 300px;
     background-color: #f1f1f1;
     border: none;
     outline: none;
@@ -26,7 +28,7 @@
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
     border-radius: 5px;
     color: rgb(49, 49, 49);
     transition: .5s;
@@ -43,19 +45,22 @@
     font-weight: bold;
   }
   
-  /* Style the tab content */
+/* Parent of .showOneTopic */
 .tabcontent {
     display: none;
+    position: relative;
   }
-
+  
+/* table */
 .showOneTopic {
+    position: absolute;
+    left: 20%;
     border-collapse: collapse;
-    border: 1px solid rgb(128, 128, 128);
-    width: 100%;
+    width: 70%;
     color: rgb(41, 41, 41);
-    margin-top: 40px;
-    margin-bottom: 100px;
+    margin: 40px 0 100px 0;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
 }
 th, td {
@@ -89,7 +94,7 @@ td {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: red;
+    background-color: rgb(255, 36, 36);
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -106,109 +111,147 @@ td {
     |            RESPONSIVE WEBSITE              |
     |============================================|
     */
-
-@media (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
     .wrapper-exe {
-        width: 1400px;
         padding-top: 90px;
+        /* left: 10%; */
     }
-    .tablinks {
-        width: 620px;
-        height: 95px;
-        font-size: 25px;
+    .all-topic {
+        width: 8%;
+        left: 10%;
+        position: relative;
     }
-    .showOneTopic {
-        width: 1200px;
-    }
-}
-
-@media (max-width: 1440px) {
-    .wrapper-exe {
-        width: 960px;
-        padding-top: 60px;
-    }
-    .tablinks {
-        width: 500px;
-        height: 85px;
-        font-size: 23px;
+    .tabcontent {
+        width: 80%;
     }
     .showOneTopic {
-        width: 900px;
+        width: 80%;
+        left: 24%;
     }
 }
-
-@media (max-width: 1366px) {
+@media screen and (max-width: 1920px) {
     .wrapper-exe {
-        width: 860px;
         padding-top: 90px;
+        /* left: 10%; */
     }
-    .tablinks {
-        width: 420px;
-        height: 65px;
-        font-size: 20px;
+    .all-topic {
+        width: 8%;
+        left: 10%;
+        position: relative;
+    }
+    .tabcontent {
+        width: 80%;
     }
     .showOneTopic {
-        width: 800px;
+        width: 80%;
+        left: 24%;
     }
 }
 
-@media (max-width: 1280px) {
-    .wrapper-exe { 
-        width: 760px; 
+@media screen and (max-width: 1440px) {
+    .all-topic {
+        left: 14%;
+        position: relative;
     }
     .showOneTopic {
-        width: 780px;
+        width: 70%;
+        left: 32%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .all-topic {
+        left: 15%;
+        position: relative;
+    }
+    .showOneTopic {
+        width: 65%;
+        left: 38%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .wrapper-exe {
+        left: 0%;
+    }
+    .all-topic {
+        left: 16%;
+        position: relative;
+    }
+    .showOneTopic {
+        width: 60%;
+        left: 40%;
     }
 }
 
 /* ---------------  iPad   ------------------ */
-@media (max-width: 768px) { 
+
+@media screen and (max-width: 768px) { 
     .wrapper-exe {
-        left: 198px;
-        width: 360px;
+        z-index: 3;
+        display: flex;
+        justify-content: center;
+        width: 100%;
         height: 700px;
-        padding-top: 50px;
+        padding: 0;
+    }
+    .all-topic {
+        width: 60%;
+        margin: 0;
+        left: 0;
+        top: -18%;
     }
     .tablinks {
-        width: 520px;
-        height: 65px;
-        border-radius: 3px;
-        margin: 5px 0;
+        width: 100%;
     }
-    #back {
-        opacity: 1;
+    .tabcontent {
+        width: 100%;
         left: 0;
+        top: -15%;
     }
     .showOneTopic {
-        width: 660px;
-        
+        width: 100%;
+        left: 0;
+    }
+    #back {
+        left: 2%;
     }
 }
 
-@media (max-width: 375px) { 
+@media screen and (max-width: 630px) { 
     .wrapper-exe {
         left: 0;
-        width: 360px;
-        height: 1730px;
-        padding-top: 50px;
+        width: 100%;
+        height: 2000px;
+    }
+    .all-topic {
+        width: 90%;
+        margin: 0;
+        left: 0;
+        top: -38%;
     }
     .tablinks {
-        width: 320px;
+        width: 90%;
         height: 65px;
         border-radius: 3px;
         margin: 5px 0;
     }
     #back {
         opacity: 1;
+    }
+    .tabcontent {
+        width: 98%;
+        top: -38%;
     }
 
     .showOneTopic {
         background: #fff;
-        width: 340px;
+        width: 98%;
         border: none;
     }
     tr {
-        border-bottom: 60px solid rgb(255, 255, 255);
+        border-bottom: 40px solid rgb(255, 255, 255);
+        width: 100%;
     }
     th {
         display: none;
@@ -219,23 +262,30 @@ td {
         display: flex;
         flex-direction: column;
         background: rgb(240, 240, 240);
-        padding-top: 15px;
         height: 20px;
     }
     td:nth-child(1) {
-        font-weight: 600;
-        color: rgb(20, 20, 20);
+        font-weight: bold;
+        color: rgb(46, 46, 46);
+        background: rgb(228, 228, 228);
+        padding: 10px 15px;
+        border-top: 5px solid dodgerblue;
     }
     td:nth-child(2) {
         font-style: italic;
+        background: rgb(248, 248, 248);
     }
     td:nth-child(3) {
         color: rgb(7, 71, 211);
         text-decoration: underline;
+        background: rgb(248, 248, 248);
+    }
+    td:nth-child(4) {
+        background: rgb(248, 248, 248);
     }
 }
 
-@media (max-width: 320px) { 
+@media screen and (max-width: 320px) { 
     .wrapper-exe {
         width: 303px;
     }

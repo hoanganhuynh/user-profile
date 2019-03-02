@@ -16,6 +16,12 @@
     background-color: rgb(255, 255, 255);
     position: fixed !important;
 }
+#name-slidebar {
+    margin-top: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
 
 /* CSS ANH DAI DIEN */
 .my-avatar {
@@ -117,17 +123,17 @@
     
     /* THONG TIN CA NHAN */
     .my-info {
-        top: 230px;
+        top: 250px;
     }
 
     /* DOI MAT KHAU */
     .change-password {
-        top: 291px;
+        top: 311px;
     }
 
     /* BAI TAP DA LAM */
     .exercise-done {
-        top: 352px;
+        top: 372px;
     }
 
     /* DIEM */
@@ -174,25 +180,25 @@ color: rgba(138, 138, 138, 0.842);
         width: 390px;
         height: 80px;
     }
-    /* VI TRI 3 CHUC NANG */
-        
-        /* THONG TIN CA NHAN */
-        .my-info {
-            top: 250px;
-        }
+/* VI TRI 3 CHUC NANG */
+    
+    /* THONG TIN CA NHAN */
+    .my-info {
+        top: 280px;
+    }
 
-        /* DOI MAT KHAU */
-        .change-password {
-            top: 331px;
-        }
+    /* DOI MAT KHAU */
+    .change-password {
+        top: 360px;
+    }
 
-        /* BAI TAP DA LAM */
-        .exercise-done {
-            top: 412px;
-        }
+    /* BAI TAP DA LAM */
+    .exercise-done {
+        top: 440px;
+    }
             /* DIEM */
         .my-point {
-            top: 510px;
+            top: 580px;
             height: 110px;
             display: flex;
             flex-direction: column;
@@ -235,7 +241,6 @@ color: rgba(138, 138, 138, 0.842);
             /* DIEM */
         .my-point {
             top: 430px;
-            
             height: 110px;
             display: flex;
             flex-direction: column;
@@ -255,6 +260,48 @@ color: rgba(138, 138, 138, 0.842);
         top: 0;
         left: 10px;
     }
+        /* VI TRI 3 CHUC NANG */
+    
+        /* THONG TIN CA NHAN */
+        .my-info {
+            top: 270px;
+        }
+
+        /* DOI MAT KHAU */
+        .change-password {
+            top: 351px;
+        }
+
+        /* BAI TAP DA LAM */
+        .exercise-done {
+            top: 432px;
+        }
+            /* DIEM */
+        .my-point {
+            top: 520px;
+        }
+}
+@media (max-width: 320px) { 
+        /* VI TRI 3 CHUC NANG */
+    
+        /* THONG TIN CA NHAN */
+        .my-info {
+            top: 270px;
+        }
+
+        /* DOI MAT KHAU */
+        .change-password {
+            top: 326px;
+        }
+
+        /* BAI TAP DA LAM */
+        .exercise-done {
+            top: 382px;
+        }
+            /* DIEM */
+        .my-point {
+            top: 445px;
+        }
 }
 
 

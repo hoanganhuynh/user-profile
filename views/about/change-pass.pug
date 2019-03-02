@@ -4,21 +4,28 @@ block content
     .container     
         .wrapper-changepwd
             a#back(href='/about') Quay lai
+
             form#name-log1
                 label.lb-pwd(for='') tên đăng nhập
-                input(type='text', disabled="disabled", value="hoangan123")
-            form#pwd-new
+                input#name-login(type='text', disabled="disabled", value="hoangan123")
+                
+            form#pwd-new(method='post', action='', onsubmit='return validateForm()')
                 label.lb-pwd(for='pwd') Mật khẩu mới
-                input#pwd(type='password', placeholder="Nhập mật khẩu mới...")
+                input#pwd(name="password", type='password', placeholder="Nhập mật khẩu mới...", onkeyup='check();')
                 i#eye.fas.fa-eye
 
-            form#pwd-again
+            form#pwd-again(method='post', action='', onsubmit='return validateForm()')
                 label.lb-pwd(for='pwd') Nhập lại mật khẩu
-                input#pwdTwo(type='password', placeholder="Nhập lại mật khẩu...")
+                input#pwdTwo(name="confirm-password", type='password', placeholder="Nhập lại mật khẩu...", onkeyup='check();')
+                span#message
                 i#eyeTwo.fas.fa-eye
-            a#save(href='#') Lưu thay đổi
-            a#cancer(href='/about') Hủy bỏ     
+
+                input#save(type='submit', name='save', value='Lưu thay đổi')
+                //- a#cancer(href='/about') Hủy bỏ
+
+
     script(src="/javascript/password.js")
+    script(src="/javascript/uploadAvt.js")  
 
 
 

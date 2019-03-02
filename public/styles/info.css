@@ -2,6 +2,7 @@ body {
     background-color: #fff;
 }
 .wrapper-info {
+    font-family: Montserrat;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -18,7 +19,7 @@ body {
     margin: 10px 80px 20px 260px;
     border: 1px solid rgb(197, 197, 197);
     border-radius: 4px;
-    width: 414px;
+    width: 614px;
     padding: 1px;
     display: flex;
     flex-direction: column;
@@ -39,15 +40,16 @@ body {
 }
 
 /* FORM dac biet*/
+
     #birthday {
-        width: 200px;
+        width: 300px;
     }
     #phone {
         position: absolute;
         top: 257px;
-        width: 200px;
+        width: 300px;
         height: 61px;
-        left: 214px;
+        left: 314px;
     }
 
 /* TUY CHINH INPUT */
@@ -58,6 +60,8 @@ body {
 
 /* TUY CHINH LABEL */
 label {
+    font-family: Montserrat;
+    font-weight: 500;
     text-transform: uppercase;
     font-size: 15px;
     color: #414141;
@@ -67,14 +71,17 @@ label {
 /* TUY CHINH MUC 'LUU THAY DOI' va 'NUT QUAY LAI'  */
 #save-info {
     position: absolute;
-    top: 460px;
-    left: 394px;
     margin: 20px;
+    width: 150px;
+    height: 40px;
     color: dodgerblue;
     background: #fff;
     border: 1px solid dodgerblue;
     padding: 8px 12px;
-    border-radius: 4px; 
+    border-radius: 99px; 
+        left: 50%;
+        top: 550px;
+    
 }
         #save-info:hover {
             background: dodgerblue;
@@ -85,6 +92,13 @@ label {
     left: 260px;
     top: 28px;
     opacity: 0;
+    text-decoration: none;
+    background-color: rgb(226, 226, 226);
+    padding: 3px 10px;
+    border-radius: 999px;
+}
+#back:active, #back:visited {
+    color: #111;
 }
 
 
@@ -95,11 +109,11 @@ label {
 
 /*<------- RESPONSIVE WEB ------->*/
 
-@media (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
     .wrapper-info {
         background: rgb(255, 255, 255);
         width: 1200px;
-        left: 610px;
+        left: 31%;
     }
     #my-name, #name-log, #birthday, #phone, #email {
         width: 614px;
@@ -116,17 +130,17 @@ label {
         top: 347px;
     }
     #save-info {
-        left: 494px;
+        left: 473px;
         top: 550px;
     }
 }   
 
 /* 8:5 19" */
-@media (max-width: 1440px) { 
+@media screen and (max-width: 1440px) { 
     .wrapper-info {
         background: rgb(255, 255, 255);
         width: 1000px;
-        left: 410px;
+        left: 28.5%;
     }
     #my-name, #name-log, #birthday, #phone, #email {
         width: 514px;
@@ -138,11 +152,11 @@ label {
         left: 264px;
     }
     #save-info {
-        left: 440px;
+        left: 426px;
     }
 }   
 
-@media (max-width: 1366px) { 
+@media screen and  (max-width: 1366px) { 
     .wrapper-info {
         width: 920px;
     }
@@ -155,13 +169,17 @@ label {
     #phone {
         left: 254px;
     }
+    #save-info {
+        left: 420px;
+    }
 }
 
 
 /* 8:5 Laptop 14" */
-@media (max-width: 1280px) { 
+@media screen and (max-width: 1280px) { 
     .wrapper-info {
         width: 820px;
+        left: 34%;
     }
     #my-name, #name-log, #birthday, #phone, #email {
         margin: 10px 80px 20px 200px;
@@ -186,25 +204,27 @@ label {
     }
     #save-info {
         top: 460px;
-        left: 330px;
+        left: 320px;
     }    
 }
 
 /*-------------------------- iPad  -------------------------- */
-@media (max-width: 768px) { 
+@media screen and  (max-width: 768px) { 
     .wrapper-info {
-        top: 100px;
-        left: 198px;
-        width: 365px;  
-        height: 700px;
+        top: 0;
+        left: 0;
+        width: 100%;  
+        height: 800px;
+        z-index: 5;
+        padding: 0 5px 0 5px;
     }
 
     #my-name, #name-log, #birthday, #phone, #email {
         margin: 5px 0px 10px 0px;
-        width: 340px;
+        width: 92%;
     }
         #my-name {
-            margin: 50px 0px 10px 0px;
+            margin: 80px 0px 10px 0px;
         }
 
     .wrapper-info form input {
@@ -216,16 +236,19 @@ label {
         top: 0;
         position: relative;
     }
-    /* nut quay lai */
-    /* nut save */
     #back, #save-info {
         left: 0;
         opacity: 1;
+    }
+    #save-info {
+        margin-top: 70px;
+        position: absolute;
+        left: 36%;
     }
 }
 
 /* iPhone 6*/
-@media (max-width: 375px) { 
+@media screen and (max-width: 375px) { 
     .wrapper-info {
         top: 0;
         left: 0;
@@ -235,10 +258,10 @@ label {
 
     #my-name, #name-log, #birthday, #phone, #email {
         margin: 5px 0px 10px 0px;
-        width: 340px;
+        width: 90%;
     }
         #my-name {
-            margin: 50px 0px 10px 0px;
+            margin: 80px 0px 10px 0px;
         }
 
     .wrapper-info form input {
@@ -251,22 +274,27 @@ label {
         position: relative;
     }
 
-    #back, #save-info {
-        left: 0;
+    #back {
         opacity: 1;
     }
+    #save-info {
+        left: 20%;
+    }
+
 }
-@media (max-width: 320px) {
+@media screen and (max-width: 320px) {
     .wrapper-info {
         width: 320px;  
     }
     #my-name, #name-log, #birthday, #phone, #email {
         margin: 5px 0px 10px 0px;
-        width: 300px;
     }
         #my-name {
-            margin: 50px 0px 10px 0px;
+            margin: 70px 0px 10px 0px;
         }
+    .wrapper-info form input  {
+        width: 90%;
+    }
 }
 
 
