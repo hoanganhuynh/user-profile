@@ -1,3 +1,4 @@
+// Show info of tab
 function openTopic(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,6 +12,11 @@ function openTopic(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+
+
+// Scroll to top
 
 window.onscroll = function() {scrollFunction()};
 
