@@ -1,6 +1,3 @@
-body { 
-    background-color: #fff;
-}
 .wrapper-changepwd {
     display: flex;
     flex-direction: column;
@@ -11,7 +8,6 @@ body {
     width: 900px;
     height: 700px;
     background: #ffffff;
-    
 }
 
 /* FORM */
@@ -24,12 +20,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-    #name-log1{
-        margin: 60px 80px 20px 260px;
-    }
+#name-log1{
+    margin: 60px 80px 20px 260px;
+}
     
+
+
 /* TUY CHINH O INPUT */
-.wrapper-changepwd form input {
+.inp-changepwd {
     width: 340px;
     height: 35px;
     margin: 5px 5px 0 15px;
@@ -40,7 +38,7 @@ body {
 }
 
 /* TUY CHINH LABEL */
-label {
+.lb-pwd {
     text-transform: uppercase;
     font-size: 15px;
     color: #414141;
@@ -122,7 +120,7 @@ label {
             margin: 130px 80px 20px 260px;
         }
     /* TUY CHINH O INPUT */
-    .wrapper-changepwd form input {
+    .inp-changepwd {
         width: 400px;
         height: 40px;
     }  
@@ -162,7 +160,7 @@ label {
             margin: 130px 80px 20px 260px;
         }
     /* TUY CHINH O INPUT */
-    .wrapper-changepwd form input {
+    .inp-changepwd {
         width: 400px;
         height: 40px;
     }  
@@ -204,7 +202,7 @@ label {
             margin: 120px 80px 5px 190px;
         }
     /* TUY CHINH O INPUT */
-    .wrapper-changepwd form input {
+    .inp-changepwd  {
         width: 300px;
     }        
     #save {
@@ -267,7 +265,7 @@ label {
         z-index: 99;
     }
 
-    .wrapper-changepwd form input {
+    .inp-changepwd  {
         width: 250px;
     }
     #name-log1, #pwd-new, #pwd-again {
@@ -308,7 +306,7 @@ label {
         height: 700px;
     }
 
-    .wrapper-changepwd form input {
+    .inp-changepwd  {
         width: 250px;
     }
     #name-log1, #pwd-new, #pwd-again {

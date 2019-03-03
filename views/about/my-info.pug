@@ -7,23 +7,23 @@ block content
             a#back(href='/about') Quay lai
 
             form#my-name(method='post', action='', onsubmit='return validateName()')
-                label(for='name') họ và tên
-                input#name(type='text', value="Huỳnh Hoàng Ẩn")
+                label.lbl-info(for='name') họ và tên
+                input#name.ipt-info(type='text', value="Huỳnh Hoàng Ẩn")
             form#name-log
-                label(for='') tên đăng nhập
-                input(type='text', disabled="disabled", value="hoangan123")
+                label.lbl-info(for='') tên đăng nhập
+                input.ipt-info(type='text', disabled="disabled", value="hoangan123")
             form#birthday
-                label(for='') ngày sinh
-                input#birth(type='date')
+                label.lbl-info(for='') ngày sinh
+                input#birth.ipt-info(type='date')
             form#phone
-                label(for='ph') số điện thoại
-                input#ph(type='number', value="0327846162")
+                label.lbl-info(for='ph') số điện thoại
+                input#ph.ipt-info(type='number', value="0327846162")
             form#email
-                label email
-                input(type='text',disabled="disabled", value="hoangan@coder.com")
+                label.lbl-info email
+                input.ipt-info(type='text',disabled="disabled", value="hoangan@coder.com")
 
 
-                input#save-info(type='submit', name='save', value='Lưu thay đổi')
+                input#save-info.ipt-info(type='submit', name='save', value='Lưu thay đổi')
         
 
     script(src="/javascript/doiten.js")  

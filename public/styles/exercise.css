@@ -34,12 +34,11 @@
     transition: .5s;
 }
   
-/* Change background color of buttons on hover */
+
 .tablinks:hover {
     background-color: #ddd;
   }
   
-/* Create an active/current tablink class */
 .tablinks:active {
     background-color: #ccc;
     font-weight: bold;
@@ -63,20 +62,20 @@
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 4px;
 }
-th, td {
+tr.spaceUnder th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
     vertical-align: middle;
 }
 
-th {
+tr.spaceUnder th {
     height: 50px;
     color: #fff;
     text-transform: uppercase;
     background: dodgerblue;
 }
-td {
+tr.spaceUnder td {
     height: 30px;
     background: rgb(250, 250, 250);
 }
@@ -249,14 +248,14 @@ td {
         width: 98%;
         border: none;
     }
-    tr {
+    .spaceUnder {
         border-bottom: 40px solid rgb(255, 255, 255);
         width: 100%;
     }
-    th {
+    .spaceUnder th {
         display: none;
     }
-    td {
+    .spaceUnder td {
         /* vertical-align: middle; */
         text-align: left;
         display: flex;
@@ -264,23 +263,23 @@ td {
         background: rgb(240, 240, 240);
         height: 20px;
     }
-    td:nth-child(1) {
+    .spaceUnder td:nth-child(1) {
         font-weight: bold;
         color: rgb(46, 46, 46);
         background: rgb(228, 228, 228);
         padding: 10px 15px;
         border-top: 5px solid dodgerblue;
     }
-    td:nth-child(2) {
+    .spaceUnder td:nth-child(2) {
         font-style: italic;
         background: rgb(248, 248, 248);
     }
-    td:nth-child(3) {
+    .spaceUnder td:nth-child(3) {
         color: rgb(7, 71, 211);
         text-decoration: underline;
         background: rgb(248, 248, 248);
     }
-    td:nth-child(4) {
+    .spaceUnder td:nth-child(4) {
         background: rgb(248, 248, 248);
     }
 }

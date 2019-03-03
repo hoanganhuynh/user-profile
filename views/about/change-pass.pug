@@ -7,20 +7,20 @@ block content
 
             form#name-log1
                 label.lb-pwd(for='') tên đăng nhập
-                input#name-login(type='text', disabled="disabled", value="hoangan123")
+                input#name-login.inp-changepwd(type='text', disabled="disabled", value="hoangan123")
                 
             form#pwd-new(method='post', action='', onsubmit='return validateForm()')
                 label.lb-pwd(for='pwd') Mật khẩu mới
-                input#pwd(name="password", type='password', placeholder="Nhập mật khẩu mới...", onkeyup='check();')
+                input#pwd.inp-changepwd(name="password", type='password', placeholder="Nhập mật khẩu mới...", onkeyup='check();')
                 i#eye.fas.fa-eye
 
             form#pwd-again(method='post', action='', onsubmit='return validateForm()')
                 label.lb-pwd(for='pwd') Nhập lại mật khẩu
-                input#pwdTwo(name="confirm-password", type='password', placeholder="Nhập lại mật khẩu...", onkeyup='check();')
+                input#pwdTwo.inp-changepwd(name="confirm-password", type='password', placeholder="Nhập lại mật khẩu...", onkeyup='check();')
                 span#message
                 i#eyeTwo.fas.fa-eye
 
-                input#save(type='submit', name='save', value='Lưu thay đổi')
+                input#save.inp-changepwd(type='submit', name='save', value='Lưu thay đổi')
                 //- a#cancer(href='/about') Hủy bỏ
 
 
